@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="Rohan khadka">
+		<meta name="description" content="Home page">
+		<meta name="keywords" content="HTML">
+		<title>BookStore | Home</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Internal CSS -->
+		<style type="text/css">
+			/*division style for adding 3 products */ 
+			 .book-link
+			 {
+			 	width:300px;
+			 	height:400px;
+			 	margin-top: 20px;
+			 }
+		</style>
+	</head>
+	<body>
+		<!-- division for navigation bar -->
+		<div style="height: 85px">
+			<!-- creating navigation bar-->
+			<nav class="navbar">
+				<!-- flexing for website logo and navigation -->
+     			<div class="flex">
+     			<!-- division section for logo design -->
+     			<section>
+     			<div style="padding-top: 15px; padding-right: 350px">
+     				<a href="Index.html" style="text-decoration: unset;"><span style="color: #000000" class="Logo">Book</span><span style="color:red;" class="Logo">Store</span></a>
+     			</div>
+     			</section>
+     				<section>
+     				<!-- navigation section -->
+     				<ul style="padding-top: 25px">
+						<li class="nav-list"><a href="Index.html" class="selected-nav-button">Home</a></li>
+						<li class="nav-list"><a href="pages/Products.html" class="unselected-nav-button">Products</a></li>
+						<li class="nav-list"><a href="pages/Blog.html" class="unselected-nav-button">Blog</a></li>
+						<li class="nav-list"><a href="pages/Research.html" class="unselected-nav-button">Research</a></li>
+						<li class="nav-list"><a href="pages/Contact Us.html" class="unselected-nav-button">Contact Us</a></li>
+					</ul>
+					</section>
+     			</div>
+     		</nav>
+     	</div>
+
+     	<!-- Allocating space for adding main content -->
+     	<main>
+     		<div style="width: 100%;height: 600px;">
+
+     			<!-- image slider -->
+     				<!-- Inline CSS for slider which is only used once -->
+			    	<div style="width: 100%; height: 600px; overflow: hidden;">
+				    <div id="img">
+					<img src="images/a.jpg">
+					</div>
+				    </div>
+     			
+     		</div>
+     			<div style="width: 100%; height: 200px;">
+     				<h1 style="text-align: center; font-family: Lucida Calligraphy; font-size: 40px; color: orange; padding-top: 60px;">Discover</h1>
+					<h1 style="text-align: center; padding-top: 10px; padding-bottom: 60px; font-size: 40px; font-family: Microsoft Sans Serif;">Any Category Books</h1>
+     			</div>
+     			<!-- DIVISION FOR ADDING THREE DIFFERENT BOOKS -->
+     			<div style="width: 100%; height: 500px;">
+     				<!--USING FLEX FOR ADDING THREE DIFFEERNT BOOKS-->
+     				<div class="flex">
+     					<!--Division for adding religion book image -->
+     					<div class="book-link">
+     						<a href="#"><img src="images/religious.jpg" alt="religious" style="width: 100%; height: 400px;"></a>
+							<h1 style="text-align: center;"><a href="#" class="home-book-cate">RELIGION</a></h1>
+     					</div>
+
+     					<!--Division for adding Young adult book image -->
+     					<div class="book-link">
+     						<a href="base2.html"><img src="images/13reasons.jpg" alt="13reasons" style="width: 100%; height: 400px;"></a>
+							<h1 style="text-align: center;"><a href="base2.html" class="home-book-cate">YOUNG ADULT</a></h1>
+     					</div>
+
+     					<!--Division for adding science friction book image -->
+     					<div class="book-link">
+     						<a href="base2.html"><img src="images/sciencefriction.jpg" alt="sciencefriction" style="width: 100%; height: 400px;"></a>
+							<h1 style="text-align: center;"><a href="base2.html"  class="home-book-cate">SCIENCE FICTION</a></h1>   					
+     					</div>
+     				</div>
+     	</main>
+ 			<!-- PROVIDING THE FOOTHER CONTENT-->
+	     	<footer style="background-color: #454545; width: 100%; height: 180px; border-top: 2px solid #FFFFFF;">
+	     		<!-- USING FLEX FOR COPYRIGHT TEXT, SOCIAL MEDAIA LINKS AND TIME -->
+				<div class="flex">						
+				<div>
+						<p class="footer-copyright"> &copy; 2022 All Rights Reserved | Rohan khadka</p>
+					</div>
+						<div style="width: 250px;">
+							<p class="footer">Follow Us</p>
+							<a href="https://www.facebook.com/"><img src="images/facebook.jpg" class="facebook"></a>
+							<a href="https://www.instagram.com/"><img src="images/insta.jpg"class="instagram"></a>
+							<a href="https://www.twitter.com/"><img src="images/twitter.jpg" class="twitter"></a>
+							<a href="https://www.youtube.com/"><img src="images/youtube.jpg" class="youtube"></a>
+						</div>
+							<div>
+								<!-- calling external JS id 'date' -->
+								<p class="time" id="date"></p>
+							</div>					
+				</div>
+				</footer>
+		<!-- External JS to display time in footer -->
+		<script src="js/script.js"></script>
+
+		<!-- Internal JS to display slider -->
+		<script type="text/javascript">
+			var images = ['images/a.jpg', 'images/b.jpg','images/c.jpg' , 'images/d.jpg', 'images/e.jpg','images/f.jpg','images/g.jpg'];
+				var x = 0;
+				var imgs = document.getElementById('img');
+				setInterval(slider, 4000);
+				function slider()
+				{
+					if (x < images.length) 
+					{
+						x = x+1;
+					}
+					else
+					{
+						x = 1;
+					}
+				
+				imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+				}
+		</script>
+	</body>
+</html>

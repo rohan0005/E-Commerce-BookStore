@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="Rohan khadka">
+		<meta name="description" content="Contact Us page">
+		<meta name="keywords" content="HTML">
+		<title>BookStore | Contact Us</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<!-- Internal JS-->
+		<style type="text/css">
+			/*text design in form*/
+      		.form-font
+    		{
+      		  font-family: sans-serif;
+      		  font-size: 20px;
+    		}
+
+		</style>
+		<!-- Javascript for form validation-->
+     	<script type="text/javascript">
+			function validateForm()
+			{
+				var firstName = document.forms["messageForm"]["name"].value;
+				var lastName = document.forms["messageForm"]["email"].value;
+				var gender = document.forms["messageForm"]["genderDetails"].value;
+				var messageDetails = document.forms["messageForm"]["message"].value;
+
+				//Defining Condition
+				//alert message if empty fields are found
+				if (firstName == "" || lastName == "" || messageDetails == "") 
+				{
+					alert("Empty fields Found");
+				}
+
+				//alert message if every fields are filled
+				else
+				{
+					alert("Thank you for your feedback!!!")
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<!-- division for navigation bar -->
+		<div style="height: 85px">
+		 	<!-- creating navigation bar-->
+			<nav class="navbar">
+				<!-- flexing for website logo and navigation -->
+     			<div class="flex">
+     			<!-- division section for logo design -->
+     			<section>
+     			<div style="padding-top: 15px; padding-right: 350px">
+     				<a href="../Index.html" style="text-decoration: unset;"><span style="color: #000000" class="Logo">Book</span><span style="color:red;" class="Logo">Store</span></a>
+     			</div>
+     			</section>
+     				<section>
+     				<!-- navigation section -->
+     				<ul style="padding-top: 25px">
+						<li class="nav-list"><a href="../Index.html" class="unselected-nav-button">Home</a></li>
+						<li class="nav-list"><a href="Products.html" class="unselected-nav-button">Products</a></li>
+						<li class="nav-list"><a href="Blog.html" class="unselected-nav-button">Blog</a></li>
+						<li class="nav-list"><a href="Research.html" class="unselected-nav-button">Research</a></li>
+						<li class="nav-list"><a href="Contact Us.html" class="selected-nav-button">Contact Us</a></li>
+					</ul>
+					</section>
+     			</div>
+     		</nav>
+     	</div>
+
+     	<!-- Allocating space for adding main content -->
+     	<main>
+     		<div>
+     			<!-- section for adding heading-->
+     		   <section>
+     			<div style="width: 100%; height: 110px; padding-top: 10px">
+     				<h1 style="font-family: Tangerine;text-align: center; font-size: 50px; color: orange;">Get In Touch</h1>
+     				<h1 style="font-family: Candara; text-align: center; font-size: 30px; ">Contact Us</h1>
+     			</div>
+     		   </section>
+
+     		   <!-- section for adding form for contact us -->
+     		   <section>
+     		   	<div style="width: 100%; height: 600px;">
+
+     		   		<!-- flex for font and contact info part -->
+     		   		<div class="flex">
+
+     		   		<div style="width:50%; height: 100%;">
+     		   			<!-- form part -->
+     		   			<form style="padding-left: 160px;" name="messageForm" onsubmit="validateForm()">
+							<label class="form-font">Full Name</label><br><br>
+							<input style="height: 35px; width: 60%" type="text" name="name" placeholder="Your Full Name">
+							<br>
+							<br>
+
+							<label class="form-font">Email</label><br><br>
+							<input style="height: 35px; width: 60%" type="text" name="email" placeholder="Enter Email">
+							<br>
+							<br>
+
+							<label class="form-font">Gender</label><br><br>
+							<p class="form-font"><input type="radio" name="genderDetails" value="male" checked>Male 
+							<input type="radio" name="genderDetails" value="female">Female</p>
+							<br>
+							<br>
+
+							<label class="form-font">Message</label><br><br>
+							<textarea style="height: 170px; width: 60%" rows="10" cols="25" name="message" placeholder="Enter your message"></textarea>
+							<br>
+							<br>
+
+							<input style="background-color: #d1dde3; color: black;" type="submit" value="Send">
+						</form>
+     		   		</div>
+
+     		   		<!-- contact info part -->
+     		   		<div style="width: 50%; height: 100%">
+     		   			<h1 style="text-align: center; font-family: Century; padding-right: 300px">Contact info</h1><br><br><br>
+     		   			<div>
+     		   				<h1 style="color: #2c8fc0; padding-left: 170px; font-family:Arial">Address</h1>
+     		   				<p style="padding-left: 170px; font-size: 18px; font-family: Century;">Kamal Marg, Kathmandu 44600</p><br><br>
+     		   				<h1 style="color: #2c8fc0; padding-left: 170px; font-family: Arial">Gmail</h1>
+     		   				<p  style="padding-left: 170px; font-size: 18px; font-family: century">BookStore.online@gmail.com</p><br><br>
+     		   				<h1 style="color: #2c8fc0; padding-left: 170px; font-family: Arial">Phone</h1>
+     		   				<p  style="padding-left: 170px; font-size: 18px; font-family: century">+977 9847292947</p>
+     		   			</div>
+     		   			
+     		   		</div>
+
+     		   		
+     		   		</div>
+     			 </div>
+     		   </section>
+     			
+
+
+
+
+     		</div>
+     	</main>
+				<!-- PROVIDING THE FOOTHER CONTENT-->
+	     		<footer style="background-color: #454545; width: 100%; height: 180px; border-top: 2px solid #FFFFFF;">
+	     			<!-- USING FLEX FOR COPYRIGHT TEXT, SOCIAL MEDAIA LINKS AND TIME -->
+					<div class="flex">						
+						<div>
+							<p class="footer-copyright"> &copy; 2022 All Rights Reserved | Rohan khadka</p>
+						</div>
+							<div style="width: 250px;">
+								<p class="footer">Follow Us</p>
+								<a href="https://www.facebook.com/"><img src="../images/facebook.jpg" class="facebook"></a>
+								<a href="https://www.instagram.com/"><img src="../images/insta.jpg"class="instagram"></a>
+								<a href="https://www.twitter.com/"><img src="../images/twitter.jpg" class="twitter"></a>
+								<a href="https://www.youtube.com/"><img src="../images/youtube.jpg" class="youtube"></a>
+							</div>
+								<div>
+									<!-- calling external JS id 'date' -->
+									<p class="time" id="date"></p>
+								</div>					
+					</div>
+				</footer>
+		<!-- External JS to display time in footer -->
+		<script src="../js/script.js"></script>
+	</body>
+</html>

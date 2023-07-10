@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="Rohan khadka">
+		<meta name="description" content="Blog page">
+		<meta name="keywords" content="HTML">
+		<meta http-equiv="refresh" content="120">
+		<title>BookStore | Blog</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<!-- internal css-->
+		<style type="text/css">
+		/*blog heading and internal link of read now */
+	    .blog-href
+	    {
+	    text-decoration: unset;
+	    font-family: Arial;
+	    color: #275c8b;
+	    }
+		</style>
+	</head>
+	<body>
+		<!-- division for navigation bar -->
+		<div style="height: 85px">
+			<!-- creating navigation bar-->
+			<nav class="navbar">
+				<!-- flexing for website logo and navigation -->
+     			<div class="flex">
+     			<!-- division section for logo design -->
+     			<section>
+     			<div style="padding-top: 15px; padding-right: 350px">
+     				<a href="../Index.html" style="text-decoration: unset;"><span style="color: #000000" class="Logo">Book</span><span style="color:red;" class="Logo">Store</span></a>
+     			</div>
+     			</section>
+     				<section>
+     				<!-- navigation section -->
+     				<ul style="padding-top: 25px">
+						<li class="nav-list"><a href="../Index.html" class="unselected-nav-button">Home</a></li>
+						<li class="nav-list"><a href="Products.html" class="unselected-nav-button">Products</a></li>
+						<li class="nav-list"><a href="Blog.html" class="selected-nav-button">Blog</a></li>
+						<li class="nav-list"><a href="Research.html" class="unselected-nav-button">Research</a></li>
+						<li class="nav-list"><a href="Contact Us.html" class="unselected-nav-button">Contact Us</a></li>
+					</ul>
+					</section>
+     			</div>
+     		</nav>
+     	</div>
+     			<!-- Allocating space for adding main content -->
+	     		<main>
+	     			<!--section to add heading-->
+	     			<section>
+	     				<div style="width:100%; height: 100px;">
+	     					<h1 style="font-size: 45px; color: #1f495e; padding-top: 20px; padding-left: 100px; font-family: Comic Sans MS">Blog</h1>
+	     				</div>
+	     			<!--section to internal link by adding box-->
+	     			</section>
+	     				<section>
+		     			<div style="width: 100%; height: 400px">
+		     						<div style="float: left; margin-left: 50px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+									  <a href="Read Blog.html"><img style="width:500px; height:320px" src="../images/technology.jpg" alt="Enders Game"></a>
+									  <h3><a class="blog-href" href="Read Blog.html">Impact Of Technology</a></h3>
+									  <p><span>by </span><a style="text-decoration: unset; color: #000000;" href="#">Rohan</a> / April 2, 2022</p>
+									  <p><a class="blog-href" href="Read Blog.html">Read now</a></p>
+									</div>
+						</div>
+						</section>	
+	     		</main>
+
+	     		<!-- PROVIDING THE FOOTHER CONTENT-->
+	     		<footer style="background-color: #454545; width: 100%; height: 180px; border-top: 2px solid #FFFFFF;">
+	     			<!-- USING FLEX FOR COPYRIGHT TEXT, SOCIAL MEDAIA LINKS AND TIME -->
+					<div class="flex">						
+						<div>
+							<p class="footer-copyright"> &copy; 2022 All Rights Reserved | Rohan khadka</p>
+						</div>
+							<div style="width: 250px;">
+								<p class="footer">Follow Us</p>
+								<a href="https://www.facebook.com/"><img src="../images/facebook.jpg" class="facebook"></a>
+								<a href="https://www.instagram.com/"><img src="../images/insta.jpg"class="instagram"></a>
+								<a href="https://www.twitter.com/"><img src="../images/twitter.jpg" class="twitter"></a>
+								<a href="https://www.youtube.com/"><img src="../images/youtube.jpg" class="youtube"></a>
+							</div>
+								<div>
+									<!-- calling external JS id 'date' -->
+									<p class="time" id="date"></p>
+								</div>					
+					</div>
+				</footer>
+		<!-- External JS to display time in footer -->
+		<script src="../js/script.js"></script>
+	</body>
+</html>

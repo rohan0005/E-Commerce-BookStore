@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="Rohan khadka">
+		<meta name="description" content="Products page">
+		<meta name="keywords" content="HTML">
+		<meta http-equiv="refresh" content="120">
+		<title>BookStore | Products</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+		<!-- internal css-->
+		<style type="text/css">
+	  /*category text design*/
+	  .category
+      {
+        text-align: left; 
+        padding-left: 70px; 
+        color: #000000; 
+        font-family: "Dubai";
+      }
+
+      /*price text design*/
+      .price 
+      {
+        color: grey;
+        font-size: 22px;
+        border-bottom: 2px solid;
+      }
+
+      /*product box design*/
+      .product
+      {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 200px;
+        margin: auto;
+        text-align: center;
+        font-family: Arial;
+      }
+
+      /*Buy now link*/
+      .buynow
+      {
+        font-family: Arial;
+        font-size: 20px;
+        margin-right: 10px;
+        text-decoration: unset;
+        font-size: 20px;
+        color: #dc1a61;  
+      }
+
+      /*images of products*/
+      .img-style-prod
+      {
+        width:100%;
+        height: 300px;
+      }
+
+      /*div for heading of product*/
+      .cate-name-div
+      {
+        padding-top: 30px;
+        padding-bottom: 25px;
+        padding-left: 400px;
+      }
+
+      /*heading design*/
+      .cate-name-heading
+      {
+        font-family: Lucida Handwriting;
+        color: #f50f86;
+      }
+		</style>
+	</head>
+	<body>
+		<!-- division for navigation bar -->
+		<div style="height: 85px">
+		 	<!-- creating navigation bar-->
+			<nav class="navbar">
+				<!-- flexing for website logo and navigation -->
+     			<div class="flex">
+     			<!-- division section for logo design -->
+     			<section>
+     			<div style="padding-top: 15px; padding-right: 350px">
+     				<a href="../Index.html" style="text-decoration: unset;"><span style="color: #000000" class="Logo">Book</span><span style="color:red;" class="Logo">Store</span></a>
+     			</div>
+     			</section>
+     				<section>
+     				<!-- navigation section -->
+     				<ul style="padding-top: 25px">
+						<li class="nav-list"><a href="../Index.html" class="unselected-nav-button">Home</a></li>
+						<li class="nav-list"><a href="Products.html" class="selected-nav-button">Products</a></li>
+						<li class="nav-list"><a href="Blog.html" class="unselected-nav-button">Blog</a></li>
+						<li class="nav-list"><a href="Research.html" class="unselected-nav-button">Research</a></li>
+						<li class="nav-list"><a href="Contact Us.html" class="unselected-nav-button">Contact Us</a></li>
+					</ul>
+					</section>
+     			</div>
+     		</nav>
+     	</div>
+
+     		<!-- Allocating space for adding main content -->
+			<main>
+			<!-- providing flex and using division tag for adding books category and products-->
+			<div class="flex">
+					<!-- division for books category names -->
+					<div style="height: 800px; width: 350px; background-color: #d1dad7;">
+						<!--providing heading-->
+						<h1 style="padding-bottom: 20px; text-align: center; color: #248fe9; font-family: Century; font-size: 30px; ">Browse by Category</h1>
+							<!--All categories names with link-->
+							<h4 style="text-align: left; padding-left: 70px; color: #000000;font-family: Dubai";><a class="cate-name" href="#">Arts</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">Biographies</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">Business & Economics</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">Computer & Internet</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">Cookery & Food</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">English Language Teaching</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">Fiction</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">History</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">Lifestyle</a></h4> 
+							<h4 class="category"><a class="cate-name" href="#">Logics</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">History</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">Medicine</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">Music</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">Politics</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">Religion</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">Science Fiction</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">Sports</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">Time travel</a></h4>
+							<h4 class="category"><a class="cate-name" href="#">Young Adult</a></h4>
+					</div>
+
+					<!--division for creating products --> 
+					<div style="width: 75%; height: 1600px; background-color: #ffffff;">
+						<!--division for heading to add quote-->
+						<div style="width: 100%; height: 100px; background-color: white;">
+							<h1 style="font-family: Bradley Hand ITC; color: #51bb06; padding-left: 100px; padding-top:40px">- A book is a gift you can open again and again.</h1>
+						</div>
+							<!--product category name bestselling -->
+							<div class="cate-name-div">
+								<h2 class="cate-name-heading">BestSellings</h2>
+							</div>
+						<!-- displaying flex to add multiple products for best sellings which can be purchase -->
+						<div class="flex">
+									  <!-- BestSellings product 1-->
+									  <div class="product">
+									  <img class="img-style-prod" src="../images/endersgame.jpg" alt="Enders Game">
+									  <h3>Ender's Game</h3>
+									  <p class="price">$19.99</p>
+									  <p><a class="buynow" href="#">Buy Now</a></p>
+									</div>
+
+									<!-- Bestsellings product 2-->
+									<div class="product">
+									  <img class="img-style-prod" src="../images/timemachine.jpg" alt="The Time Mschine">
+									  <h3>The Time Machine</h3>
+									  <p class="price">$22.99</p>
+									  <p><a class="buynow" href="#">Buy Now</a></p>
+									</div>	
+
+									<!-- Bestsellings product 3-->
+									<div class="product">
+									  <img class="img-style-prod" src="../images/lucifer.jpg" alt="The Lucifer Effect">
+									  <h3>The Lucifer Effect</h3>
+									  <p class="price">$16.99</p>
+									  <p><a class="buynow" href="#">Buy Now</a></p>
+									</div>	
+
+										<!-- Bestsellings product 4-->
+									<div class="product">
+									  <img class="img-style-prod" src="../images/you.jpg" alt="You">
+									  <h3>You</h3>
+									  <p class="price">$26.99</p>
+									  <p><a class="buynow" href="#">Buy Now</a></p>
+									</div>	
+						</div>
+
+							<!--product category name New Arrivals -->
+							<div class="cate-name-div">
+								<h2 class="cate-name-heading">New Arrivals</h2>
+							</div>
+
+					<!-- displaying flex to add multiple products for New Arrivals which can be purchase -->
+					<div class="flex">
+								  <!-- New Arrivals product 1-->
+								  <div class="product">
+								  <img class="img-style-prod" src="../images/purge.jpg" alt="The Purge">
+								  <h3>The Purge</h3>
+								  <p class="price">$19.99</p>
+								  <p><a class="buynow" href="#">Buy Now</a></p>
+								</div>
+
+								<!-- New Arrivals product 2-->
+								<div class="product">
+								  <img class="img-style-prod" src="../images/thelastwish.jpg" alt="The Last Wish">
+								  <h3>The Last Wish</h3>
+								  <p class="price">$23.99</p>
+								  <p><a class="buynow" href="#">Buy Now</a></p>
+								</div>	
+
+								<!-- New Arrivals product 3-->
+								<div class="product">
+								  <img class="img-style-prod" src="../images/pabloescobar.jpg" alt="Pablo Escobar">
+								  <h3>Pablo Escobar</h3>
+								  <p class="price">$26.99</p>
+								  <p><a class="buynow" href="#">Buy Now</a></p>
+								</div>
+
+									<!-- New Arrivals product 4-->
+								<div class="product">
+								  <img class="img-style-prod" src="../images/behindhereyes.jpg" alt="Behind Her Eyes">
+								  <h3>Behind Her Eyes</h3>
+								  <p class="price">$21.99</p>
+								  <p><a class="buynow" href="#">Buy Now</a></p>
+								</div>	
+					</div>
+
+					<!--product category name The 100 Complete collection -->
+							<div class="cate-name-div">
+								<h2 class="cate-name-heading">The 100 Complete collection</h2>
+							</div>
+
+					<!-- displaying flex to add multiple products for The 100 Complete collection which can be purchase -->
+					<div class="flex">
+								  <!--The 100 Complete collection product 1-->
+								  <div class="product">
+								  <img class="img-style-prod" src="../images/the100.jpg" alt="The 100">
+								  <h3>The 100</h3>
+								  <p class="price">$26.99</p>
+								  <p><a class="buynow" href="#">Buy Now</a></p>
+								</div>
+
+								<!-- The 100 Complete collection product 2-->
+								<div class="product">
+								  <img class="img-style-prod" src="../images/day21.jpg" alt="Day 21">
+								  <h3>Day 21</h3>
+								  <p class="price">$27.99</p>
+								  <p><a class="buynow" href="#">Buy Now</a></p>
+								</div>	
+
+								<!-- The 100 Complete collection product 3-->
+								<div class="product">
+								  <img class="img-style-prod" src="../images/homecoming.jpg" alt="Homecoming">
+								  <h3>Homecoming</h3>
+								  <p class="price">$28.99</p>
+								  <p><a class="buynow" href="#">Buy Now</a></p>
+								</div>
+
+									<!-- The 100 Complete collection product 4-->
+								<div class="product">
+								  <img class="img-style-prod" src="../images/rebellion.jpg" alt="Rebellion">
+								  <h3>Rebellion</h3>
+								  <p class="price">$29.99</p>
+								  <p><a class="buynow" href="#">Buy Now</a></p>
+								</div>	
+					</div>
+
+
+				</div><!--division end for creating products --> 
+			</div>
+			</main>
+				<!-- PROVIDING THE FOOTHER CONTENT-->
+	     		<footer style="background-color: #454545; width: 100%; height: 180px; border-top: 2px solid #FFFFFF;">
+	     			<!-- USING FLEX FOR COPYRIGHT TEXT, SOCIAL MEDAIA LINKS AND TIME -->
+					<div class="flex">						
+						<div>
+							<p class="footer-copyright"> &copy; 2022 All Rights Reserved | Rohan khadka</p>
+						</div>
+							<div style="width: 250px;">
+								<p class="footer">Follow Us</p>
+								<a href="https://www.facebook.com/"><img src="../images/facebook.jpg" class="facebook"></a>
+								<a href="https://www.instagram.com/"><img src="../images/insta.jpg"class="instagram"></a>
+								<a href="https://www.twitter.com/"><img src="../images/twitter.jpg" class="twitter"></a>
+								<a href="https://www.youtube.com/"><img src="../images/youtube.jpg" class="youtube"></a>
+							</div>
+								<div>
+									<!-- calling external JS id 'date' -->
+									<p class="time" id="date"></p>
+								</div>					
+					</div>
+				</footer>
+		<!-- External JS to display time in footer -->
+		<script src="../js/script.js"></script>
+	</body>
+</html>
